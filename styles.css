@@ -1,0 +1,274 @@
+
+/* Style de base */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0bbd8;
+    color: #ffffff;
+    line-height: 1.6;/* Style de base */
+        cursor: url('curseur.jpg'), auto; /* Remplacez par le chemin de votre image de curseur */
+       
+    }
+    
+   /* Animation de fond */
+@keyframes backgroundAnimation {
+    0% { background-color: #842b6c; }
+    25% { background-color: #efe9b3; }
+    50% { background-color: #eb40af; }
+    75% { background-color: #7e85ca; }
+    100% { background-color: #a17d45; }
+}
+    
+    body {
+        animation: backgroundAnimation 10s infinite alternate; /* Changement de fond */
+    }
+    overflow:hidden; /* Pour éviter le défilement avec les étincelles */
+
+
+
+
+body {
+    animation: backgroundAnimation 10s infinite alternate; /* Changement de fond */
+}
+/* Les étincelles dorées (celles qui apparaissent au clic) */
+.sparkle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: url('curseur.jpg') no-repeat center center;  /* Image d'étincelles */
+    background-size: cover;
+    pointer-events: none;  /* Ne pas interférer avec d'autres éléments */
+    animation: sparkles 0.5s ease-out forwards;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    z-index: 1000;
+}
+
+.cv {
+    background-color: #afa4ab; /* Couleur du fond du bouton */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement interne */
+    text-align: center; /* Centrer le texte */
+    text-decoration: none; /* Enlever la soulignure */
+    display: inline-block; /* Pour que le bouton ne prenne pas toute la largeur */
+    font-size: 20px; /* Taille de la police */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s ease; /* Animation au survol */
+}
+
+.cv:hover {
+    background-color: #a849ce; /* Changement de couleur au survol */
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e91e63;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* Styling for the #about section */
+#about {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e195e1;
+    border: 2px solid #8b7385;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-out;
+}
+
+/* Styling for the heading */
+#about h2 {
+    color: #6d2560;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Styling for the paragraph */
+#about p {
+    color: #695968;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills-container, .projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill, .project-box {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.skill:hover, .project-box:hover {
+    transform: scale(1.05);
+}
+
+.project-box img{
+    width:300px ;
+    height:150px;
+    justify-content: center;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+form input, form textarea {
+    justify-content: center;
+    height: 20px;
+    width: 400px;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+   text-align: center;
+    justify-content: center;
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    background: #ac919a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: grabbing;
+   
+
+}
+.form button:hover, .project-box:hover {
+    
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+
+#contact{
+    display: flex;
+    justify-content: center;
+}
+ h2 {
+    text-align: center;
+    color: beige;
+}
+
+#réseaux img{
+text-align: center;
+margin: 60px auto;
+padding: 40px;
+background-color: #fba5ca;
+border: 1px solid #7e245d;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(237, 196, 196, 0.1);
+width: 140px;
+height: auto;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+margin: 0 20px;
+}
+#réseaux h2 {
+font-size: 32px;
+margin-bottom: 40px;
+color: #333;
+}
+
+ #réseaux img:hover {
+transform: scale(1.1);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+    border:#fba5ca 30px;
+    height: 30px;
+    width: auto;
+    
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none; /* Masquer le menu par défaut */
+    }
+
+    nav ul.show {
+        display: flex; /* Afficher le menu lorsque le bouton burger est cliqué */
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
+}

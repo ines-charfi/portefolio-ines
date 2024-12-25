@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Développeuse Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+</head>
+<body>
+    <h1>INES-CHARFI</h1>
+    <header>
+
+        <div class="menu">
+            <div class="burger" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav id="nav" class="hidden">
+                <ul>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#réseaux">réseaux</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+<main>
+    <section id="about">
+        <h1>À propos de moi</h1>
+        <p>Je m'appelle Ines Charfi,je suis une future développeuse web,en train de perfectionner mes compétences en HTML, CSS et JavaScript. Je suis passionnée par la création de sites web dynamiques et interactifs et j'apprends continuellement de nouvelles technologies pour améliorer mes projets. Mon objectif est de devenir une développeuse compétente et de contribuer à des projets innovants tout en développant mes capacités techniques</p>
+        <div id="cv" class="cv">
+           
+            <a href="cv-ines-charfi.pdf">Télecharger-cv</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Compétences</h2>
+        <div class="skills-container">
+            <div class="skill"><img src="images/html css.png" alt="HTML"></div>
+            <div class="skill"><img src="images/viturl.jpg" alt="vm"></div>
+            <div class="skill"><img src="images/py.jpg" alt="Python"></div>
+            <div class="skill"><img src="images/github.jpg" alt="git&github"></div>
+            <div class="skill"><img src="images/vm.png" alt="vmware"></div>
+            <div class="skill"><img src="images/th.jpg" alt="bureautiques"></div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projets</h2>
+        <div class="projects-container">
+            <div class="project-box">
+                <h3>Création de Fansites</h3>
+                <a href="florence-navet.github.io/SiteFans/">
+                <img src="images/fansite.png">
+                </a>
+            </div>
+            <div class="project-box">
+                <h3>Virtualisation-de-machine</h3>
+                <a href="PPT VIRTUAL MACHINE1.pdf">
+                <img src="images/viturl.jpg">
+                </a>
+            </div>
+            <div class="project-box">
+                <h3>Création du site BloomPetals</h3>
+                <a href="https://github.com/ines-charfi/Bloompetals">
+                <img src="images/bloompetals.png" >
+                </a>
+            </div>
+             <div class="project-box">
+                <h3>Développement du jeu Morpion TIC-TAC-TOE</h3>
+                <a href="morpion_final.pdf"> <img src="images/TICTACTOE.png">
+                </a>
+             </div>
+            <div class="project-box">
+                <h3>Veille technologique</h3>
+                <a href="Decode_ton_futur (3).pdf">
+                    <img src="images/Capture d’écran 2024-12-24 132117.png">
+                </a>
+            </div>
+            <div class="project-box">
+                <h3>Hackathon</h3>
+                <a href="Présentation DataPlate (5).pdf">
+                <img src="images/Capture d’écran 2024-12-24 125023.png">
+                </a>
+            </div>
+            <div class="project-box">
+                <h3>Créer un Portefolio</h3>
+                <a href="index.html"> <img src="images/portefolio.png">
+                </a>
+           
+        </div>
+    </section>
+
+         <h2>Contact</h2>
+    <section id="contact">
+        <form>
+            <input type="text" placeholder="Votre nom" required>
+            <input type="email" placeholder="Votre email" required>
+            <textarea placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    <section id="réseaux" class="section">
+        <h4> 🤳 Retrouvez-moi sur les Réseaux Sociaux</h4>
+      
+         
+          <a href="https://github.com/ines-charfi/ines-charfi.git" target="_blank"> 
+            <img src="images/github.jpg" alt="Github" width="50px" height="50px">
+          </a>
+         
+         <a href="https://www.linkedin.com/in/ines-charfi/" target="_blank">
+            <img src="images/link.jpg" alt="LinkedIn" width="50px" height="50px">
+         </a>
+           <a href="https://mail.google.com/mail/ines.charfi@laplateforme.io" target="_blank">
+            <img src="images/gmail.png" alt="GMAIL" width="50px" height="50px">
+           </a>
+    </section>
+</main>
+    <footer>
+        <p>&copy; 2024 INES-CHARFI. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('hidden');
+        }
+    </script>
+   
+</body>
+</html>
